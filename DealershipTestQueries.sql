@@ -24,4 +24,7 @@ where v.vehicleType = "truck"
 order by d.dealership_id; 
 
 -- 6
+select * from sales_contracts s
+join inventory i on s.VIN = i.VIN
+where sale_date between "2023-09-01" and "2023-09-30";
 
